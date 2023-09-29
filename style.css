@@ -4,17 +4,101 @@
     box-sizing: border-box;
 }
 
+:root{
+    --bg-color-simulado: #C358ED;
+    --bg-color-numero01:#70D9B8;
+    --bg-color-numero02: #2EB2FF;
+    --bg-color-numero03: #44D9E6;
+    --bg-color-numero04: #FF5C5C;
+    --bg-color-numero05: #FFBD4A ;
+
+    --text-white: #ffffff;
+}
+
 body{
     height: 100vh;
 }
 
 #container_principal{
     display: flex;
-    border: 2px solid #000000;
     width: 100%;
     max-width: 50%;
-    height: 75%;
+    height: 60vh;
     margin: 60px auto;
 }
 
+.container_simulado {
+    background-color: var(--bg-color-simulado);
+    width: 25%;
+    color: var(--text-white);
+    margin-right: 20px;
+}
 
+.container_simulado h1 {
+    font-size: 2.5rem;
+    padding: 20px 0 0 20px;
+}
+
+.container_simulado p {
+    font-size: 17px;
+    padding: 0 20px;
+}
+
+
+.container_numeros {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 75%;
+}
+
+.container_numeros .number {
+    text-align: end;
+    color: var(--text-white);
+    padding: 20px;
+}
+
+.primeira_divisao{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 15vh;
+}
+
+
+.primeira_divisao .container01{
+    background-color: var(--bg-color-numero01);
+    height: 100%;
+    width: 40%;
+}
+
+.primeira_divisao .container02{
+    background-color: var(--bg-color-numero02);
+    height: 100%;
+    width: 60%;
+}
+
+.segunda_divisao{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 30vh;
+}
+
+.segunda_divisao .container03{
+    background-color: var(--bg-color-numero03);
+    height: 100%;
+    width: 55%;
+}
+
+.segunda_divisao .container04{
+    background-color: var(--bg-color-numero04);
+    height: 100%;
+    width: 45%;
+}
+
+.container05{
+    background-color: var(--bg-color-numero05);
+    width: 100%;
+    height: 20%;
+}
